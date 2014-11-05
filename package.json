@@ -1,0 +1,38 @@
+{
+    "name": "node-info",
+    "description": "view nodejs environment information",
+    "version": "1.0.0",
+    "author": "Suresh Kumar. M <sureshkm@yahoo-inc.com>",
+    "dependencies": {
+        "ejs": "~0.8.3",
+        "github-url-from-git": "~1.4.0",
+        "read-installed": "~3.1.0",
+        "read-package-json": "~1.2.7",
+        "timethat": "~0.0.2"
+    },
+    "devDependencies": {
+        "express": "~3.3.5",
+        "istanbul": "~0.1.8",
+        "jshint": "~0.9.0",
+        "mocha": "*",
+        "mockery": "^1.4.0"
+    },
+    "main": "./lib/index.js",
+    "keywords": [
+        "environment info",
+        "environment details",
+        "information",
+        "node-information",
+        "node-info",
+        "environment-info"
+    ],
+    "scripts": {
+        "test": "istanbul cover --hook-run-in-context node_modules/mocha/bin/_mocha -- -R spec ./test/unit/ni.js"
+    },
+    "licenses": [
+        {
+            "type": "BSD",
+            "url": "https://github.com/yahoo/node-info/blob/master/LICENSE"
+        }
+    ]
+}
