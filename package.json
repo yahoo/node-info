@@ -1,7 +1,7 @@
 {
     "name": "node-info",
     "description": "view nodejs environment information",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Suresh Kumar. M <sureshkm@yahoo-inc.com>",
     "dependencies": {
         "ejs": "~0.8.3",
@@ -34,5 +34,12 @@
             "type": "BSD",
             "url": "https://github.com/yahoo/node-info/blob/master/LICENSE"
         }
-    ]
+    ],
+    "bugs": { 
+        "url" : "https://github.com/yahoo/node-info/issues" 
+    },
+    "repository": {
+        "type":"git",
+        "url":"https://github.com/yahoo/node-info.git"
+    }
 }
