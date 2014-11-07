@@ -65,6 +65,9 @@ NodeInfo.prototype.getModulesInfo = function (f, cb) {
             devDepsList = []; 
 
               Object.keys(deps).forEach(function (key) {
+                if (!deps[key].name) {
+                    return;
+                }
                 pkg = {
                     name: deps[key].name,
                     description: deps[key].description,
@@ -74,9 +77,12 @@ NodeInfo.prototype.getModulesInfo = function (f, cb) {
                     bugs: deps[key].bugs || defaultString,
                     repository: deps[key].repository,
                     license: deps[key].license || defaultString,
-                    dependencies: deps[key].dependencies,
-                    dist: deps[key].dependencies.dist
+                    dependencies: deps[key].dependencies
                 };
+
+                if (pkg.dependencies && pkg.dependencies.dist) {
+                    pkg.dist = pkg.dependencies.dist;
+                }
 
                 // convert git:// form url to github URL
                 if (pkg.repository && pkg.repository.url) {
