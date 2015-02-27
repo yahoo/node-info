@@ -28,3 +28,10 @@ Screenshot
 ![nodeinfo](images/node-info.png)
 
 This module is supported by the [ejs](https://github.com/visionmedia/ejs), [github-url-from-git](https://github.com/visionmedia/node-github-url-from-git), [read-installed](https://www.npmjs.org/package/read-installed), [timethat](https://github.com/davglass/timethat), [read-package-json](https://github.com/npm/read-package-json) and [node-github-url-from-git](https://github.com/visionmedia/node-github-url-from-git) node modules.
+
+License
+-----------
+
+Code licensed under the BSD license. See [LICENSE file][] file for terms.
+
+[LICENSE file]: https://github.com/yahoo/node-info/blob/master/LICENSE
