@@ -83,7 +83,7 @@ NodeInfo.prototype.getModulesInfo = function (f, cb) {
                     pkg.repository.url = gitURL(pkg.repository.url, null);
                 }
 
-                if (!devDeps[pkg.name]) {
+                if (devDeps && !devDeps[pkg.name]) {
                     pkg.deps = true;
                     depsList.push(pkg);
                 } else {
