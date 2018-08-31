@@ -1,7 +1,7 @@
 {
     "name": "node-info",
     "description": "view nodejs environment information",
-    "version": "1.0.2",
+    "version": "2.0.0",
     "author": "Suresh Kumar. M <sureshkm@yahoo-inc.com>",
     "dependencies": {
         "ejs": "^2.5.5",
